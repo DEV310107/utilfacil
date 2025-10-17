@@ -26,6 +26,31 @@ export default function Home() {
         <h1 className="nomeg">RECURSOS MAIS UTILIZADOS</h1>
         
         <div className="cards">
+          <Link href="/conversores/geradornomes" className="card">
+            <h1>Conversor de unidades</h1>
+            <p>Converta unidades de medida de forma prática e instantânea, direto no seu navegador.</p>
+            <img src="conversor-de-unidades.png" alt="foto do card1" />
+          </Link>
+
+          <Link href="/devtools/cronometro" className="card">
+            <h1>Cronometro</h1>
+            <p>Controle seu tempo com nosso cronômetro rápido e intuitivo — perfeito para estudos, treinos ou pausas, tudo diretamente no site..</p>
+            <img src="cronometro.png" alt="foto do card2" />
+          </Link>
+
+          <Link href="/devtools" className="card">
+            <h1>Corversor PDF</h1>
+            <p>Gere QR Codes, converta JSON, conte textos e organize seu tempo.</p>
+            <img src="pdf.png" alt="foto do card3" />
+          </Link>
+        </div>
+
+
+
+
+        <h1 className="nomeg">CATEGORIAS DOS RECURSOS</h1>
+        
+        <div className="cards">
           <Link href="/conversores" className="card">
             <h1>Conversores e geradores</h1>
             <p>Crie nomes, cores, senhas e converta unidades com rapidez e praticidade.</p>

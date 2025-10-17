@@ -1,0 +1,100 @@
+/* ===== Corpo ===== */
+.corpo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.nomeg {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* ===== Card Cronômetro ===== */
+.cronometro-card {
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  padding: 40px 60px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease;
+}
+
+.cronometro-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ===== Tempo ===== */
+.tempo {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+/* ===== Botões ===== */
+.botoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.botoes button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 10px;
+  background: #007bff;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.botoes button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* ===== Marcadores ===== */
+.marcadores {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.marcador-tag {
+  background: #007bff;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 600px) {
+  .cabeca {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cronometro-card {
+    padding: 30px 20px;
+  }
+
+  .tempo {
+    font-size: 2.8rem;
+  }
+}
