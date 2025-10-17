@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import "../styles/suporte.css"
 import "../styles/home.css";
-import "../styles/suporte.css";
 import emailjs from "emailjs-com";
 import { useState } from "react";
 
@@ -11,18 +11,29 @@ export default function Suporte() {
   const [email, setEmail] = useState("");
   const [mensagem, setMensagem] = useState("");
   const [enviado, setEnviado] = useState(false);
+  const [erro, setErro] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    emailjs.send(
-      "seu_serviceID",     // substitua
-      "seu_templateID",    // substitua
-      { nome, email, mensagem },
-      "sua_publicKey"      // substitua
-    )
-    .then(() => setEnviado(true))
-    .catch((err) => console.error("Erro ao enviar:", err));
+    emailjs
+      .send(
+        "service_uub4gob",          // ✅ Service ID
+        "template_vg56fvt",         // ✅ Template ID 
+        { nome, email, mensagem },  // ✅ Dados do formulário
+        "HzqXnXQqcDZVdEeFF"         // ✅ Public Key
+      )
+      .then(() => {
+        setEnviado(true);
+        setErro(false);
+        setNome("");
+        setEmail("");
+        setMensagem("");
+      })
+      .catch(() => {
+        setErro(true);
+        setEnviado(false);
+      });
   };
 
   return (
@@ -66,6 +77,8 @@ export default function Suporte() {
         ) : (
           <p className="confirmacao">✅ Mensagem enviada com sucesso!</p>
         )}
+
+        {erro && <p className="erro">❌ Ocorreu um erro ao enviar. Tente novamente.</p>}
 
         <Link href="/" className="voltar">← Voltar para o início</Link>
       </section>
