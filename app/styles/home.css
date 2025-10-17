@@ -1,4 +1,6 @@
-
+* {
+    background-color: #D0CFCF;
+}
 
 .social_i {
     width: 30px;
@@ -7,3 +9,44 @@
 .social_t {
     width: 30px;
 }
+
+.cabeca {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #d1d1d1;
+  padding: 8px 20px;
+}
+
+.esquerda {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.direita {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 25px;
+  height: 25px;
+}
+
+.social {
+  width: 18px;
+  height: 18px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  font-size: 12px;
+  color: #333;
+}
+
+
