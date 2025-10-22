@@ -34,7 +34,7 @@
 .tempo {
   font-size: 3.5rem;
   font-weight: 700;
-  color: #007bff;
+  color: #000000;
   margin-bottom: 25px;
   letter-spacing: 2px;
 }
@@ -51,7 +51,7 @@
   padding: 12px 28px;
   border: none;
   border-radius: 10px;
-  background: #007bff;
+  background: #515151;
   color: white;
   font-size: 1rem;
   font-weight: 500;
@@ -60,7 +60,7 @@
 }
 
 .botoes button:hover {
-  background: #0056b3;
+  background: #000000;
   transform: scale(1.05);
 }
 
@@ -74,7 +74,7 @@
 }
 
 .marcador-tag {
-  background: #007bff;
+  background: #000000;
   color: #fff;
   padding: 6px 12px;
   border-radius: 8px;

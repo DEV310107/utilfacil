@@ -26,7 +26,7 @@ export default function Home() {
         <h1 className="nomeg">RECURSOS MAIS UTILIZADOS</h1>
         
         <div className="cards">
-          <Link href="/conversores/geradornomes" className="card">
+          <Link href="/conversores/corversor-unidade" className="card">
             <h1>Conversor de unidades</h1>
             <p>Converta unidades de medida de forma prática e instantânea, direto no seu navegador.</p>
             <img src="conversor-de-unidades.png" alt="foto do card1" />
