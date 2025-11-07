@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import "./styles/conversor.css";
+import "../../styles/conversor.css";
 import "../../styles/home.css";
 
 type Unidade = { label: string; factor: number };
